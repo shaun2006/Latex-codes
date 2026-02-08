@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{tabularx} % in the preamble\usepackage{framed}
+\usepackage[scaled]{helvet}
+\usepackage{framed}
+\pagestyle{empty}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left = 20mm,
+	top = 20mm
+}
+\setlength\parindent{0pt}
+\renewcommand*\familydefault{\sfdefault}
+\renewcommand{\arraystretch}{2}
+
+\begin{document}
+	\begin{center}
+		\section*{Template}
+		{\Large \LaTeX\,  Forms}
+	\end{center}
+	\hrule
+	\bigskip
+	
+	\section*{Fill out the following form:}
+	
+	\begin{framed}
+		\vspace{0.6cm}
+		\hrule
+		\vspace{0.2cm}
+		\textbf{Full name (Print letter's only)} \hfill \textbf{Date} \hfill
+		\vspace{0.7cm}
+		\hrule
+		\vspace{0.2cm}
+		\textbf{Date of birth (DD/MM/YYY)} \hspace{5.2cm} \textbf{Applicant Signature}
+		\vspace{0.5cm}
+	\end{framed}
+	
+	\smallskip
+
+	\begin{framed}
+		\textit{Complete with bule or black pen only.} \textbf{Print letter's only}\\
+		
+		\textbf{Name: Last} \hfill \textbf{First} \hfill \textbf{Middle (Initial)}
+		\vspace{0.15cm}
+		
+		\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+		\hline
+		 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+		\end{tabularx}
+		\vspace{0.5cm}
+		
+		\textbf{Date of birth} \hfill \textbf{Day} \hfill \textbf{Month} \hfill \textbf{Year} \hfill \textbf{Current Age}
+		\vspace{0.15cm}
+		
+		\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+		\hline
+		 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+		\end{tabularx}
+		\vspace{0.5cm}
+	\end{framed}
+	
+	\smallskip
+
+	\begin{framed}
+	Complete with bule or black pen only.\\[0.3cm]
+	
+	\hrule
+	\vspace{0.2cm}
+	\textbf{First Name} \hfil \textbf{Last Name} \hfil \textbf{Middle} \hfil \textbf{Date}
+	\vspace{1cm}
+	\hrule
+	\vspace{0.2cm}
+	\textbf{Birthdate (Month, Day, Year)} \hfil \hspace{-1.6cm} \textbf{Signature}
+	\vspace{0.25cm}
+	\end{framed}
+	
+	\smallskip
+	
+	\begin{framed}
+	\vspace{0.25cm}
+	\hrule
+	\vspace{0.25cm}
+	
+	{\fontsize{9pt}{18pt}\selectfont \hspace{9cm}\textbf{First} \hfil \textbf{MI} \hfil \textbf{Last} }
+	
+	{\fontsize{24pt}{30pt}\selectfont \textbf{1}\hspace{0.05cm}}
+	{\fontsize{9pt}{18pt}\selectfont Print full name you will use in your Work or Business}
+	\vspace{0.25cm}
+	\hrule
+	\vspace{0.25cm}
+	
+	{\fontsize{24pt}{30pt}\selectfont \textbf{2}\hspace{0.05cm}}
+	{\fontsize{9pt}{18pt}\selectfont Print your full name according to birth certificate}
+	\vspace{0.25cm}
+	\hrule
+	\vspace{0.25cm}
+	
+	{\fontsize{24pt}{30pt}\selectfont \textbf{3}\hspace{0.05cm}}
+	{\fontsize{9pt}{18pt}\selectfont Your signature}
+	\vspace{0.25cm}
+	\hrule
+	\vspace{0.25cm}
+	\end{framed}
+\end{document}
