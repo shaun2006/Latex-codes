@@ -1,0 +1,37 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{fontspec}
+
+\setlength\parindent{0pt}
+
+\setmainfont{Times New Roman}
+\title{\Huge{Bar Graph in \LaTeX}}
+\author{Shaun}
+\date{\today}
+	
+\pgfplotsset{compat=1.18}
+\begin{document}
+	\maketitle
+
+	\begin{tikzpicture}[scale=1.3pt]
+		\begin{axis}[
+			ybar,
+			ylabel={Marks},
+			symbolic x coords = {John, Harry, Alex, James},
+			ymin = 0, ymax = 100,
+			legend pos=outer north east,
+			legend style={draw=none},
+			enlargelimits=0.18,
+			enlarge y limits= false,
+			xtick=data,
+			nodes near coords,
+		]
+		\addplot coordinates {(John, 80)(Harry, 78)(Alex, 82)(James, 81)};
+		\addplot coordinates {(John, 40)(Harry, 56)(Alex, 60)(James, 53)};
+		\addplot coordinates {(John, 50)(Harry, 43)(Alex, 48)(James, 50)};
+		\legend{Maths, English, Russian},
+		\end{axis}
+	\end{tikzpicture}
+	
+\end{document}
