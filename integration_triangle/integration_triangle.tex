@@ -1,0 +1,46 @@
+\documentclass[a3paper]{article}
+\usepackage{amsmath}
+\usepackage{pgffor}
+\usepackage{xfp}
+\usepackage[landscape, margin=0.9in]{geometry}
+\pagestyle{empty}
+
+\newcommand\x{9.9} % set the vale of number of rows
+\newcommand{\y}{\textbf\texttt{{\LARGE{$\int_{a}^{b} x^{y} \, dx$}}}} %integral
+
+\begin{document}
+\begin{center}
+    \hspace*{2cm}{\Huge{\LaTeX}\\}
+    \vspace{0cm}
+\end{center}
+
+\begin{center}
+
+\foreach \i in {1,...,\x}{
+	\foreach \j in {1,...,\fpeval{\x - \i}}{
+		\hspace*{0em}
+	}
+	\foreach \k in {1,..., \fpeval{2*\i-1}}{
+		\y
+	}
+	\par
+	\vspace{1em}
+}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\foreach \i in {1,...,\x}{
+	\foreach \j in {1,...,\fpeval{\x - \i}}{
+		\hspace*{0em}
+	}
+	\foreach \k in {1,..., \fpeval{2*\i-1}}{
+		\y
+	}
+	\par
+	\vspace{1em}
+}
+\end{center}
+\end{document}
+
